@@ -53,7 +53,7 @@
     "qrcode.vue": "^1.6.2",
     "redirect-ssl": "^3.0.0",
     "signature_pad": "^3.0.0-beta.4",
-    "tailwindcss": "^3.0.0",
+    "tailwindcss": "^3.2.6",
     "text-to-svg": "^3.1.5",
     "v-mask": "^2.3.0",
     "vue-carousel": "^0.18.0",
