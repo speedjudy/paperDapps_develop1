@@ -27,7 +27,7 @@
     "element-ui": "^2.15.13",
     "express": "^4.18.2",
     "facebook-login-vuejs": "^2.1.3",
-    "firebase": "^9.10.0",
+    "firebase": "^9.20.0",
     "flat": "^5.0.2",
     "fs-extra": "^10.1.0",
     "html2pdf.js": "^0.10.1",
