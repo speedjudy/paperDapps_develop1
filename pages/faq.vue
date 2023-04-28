@@ -130,10 +130,10 @@ export default Vue.extend({
             // code goes in here
           })
   },
-  beforeRouteLeave(to, from, next) {
-    location.href = to.fullPath
-    return
-  },
+  // beforeRouteLeave(to, from, next) {
+  //   location.href = to.fullPath
+  //   return
+  // },
   data() {
     return {
       windowOnLoad : true,
@@ -188,7 +188,8 @@ export default Vue.extend({
     --slide-size: 0px;
     cursor: pointer;
     width: calc(25% + 22.5px);
-   /* background: #cde8ca;*/
+    // background: #CDE8CA;
+    
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -230,7 +231,6 @@ export default Vue.extend({
     &:last-child {
       clip-path: polygon(0% 0%, 100% 0%, 100% 100%, var(--slide-size) 100%);
     }
-
     &:hover {
       background: #a6e480;
     }

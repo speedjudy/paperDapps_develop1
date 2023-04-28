@@ -7,7 +7,7 @@
         :class="{ second: tabLevel >= 2, third: tabLevel >= 3 }"
       >
         <div
-          class="tab-indicator-circle circle circle-30 font-medium"
+          class="tab-indicator-circle circle circle-30 border-8 font-medium"
           :class="{ active: tabLevel >= 1 }"
         >
           $
@@ -90,10 +90,10 @@ export default mixins(GlobalMixin).extend({
       ],
     }
   },
-  beforeRouteLeave(to, from, next) {
-    location.href = to.fullPath
-    return
-  },
+  // beforeRouteLeave(to, from, next) {
+  //   location.href = to.fullPath
+  //   return
+  // },
 
   mounted() {
     console.log('package-query', this.$route.query)
@@ -131,7 +131,6 @@ export default mixins(GlobalMixin).extend({
       const packages = await this.$axios
         .$get(`/packages/?${type}=${property}&isActive=1`)
         .then((response) => {
-          console.log('package-response', response)
           this.packages = response
           this.alertEmptypackage(response.length < 1)
         })
